@@ -25,10 +25,10 @@ public class Main {
 
         Loot loot = new Loot();
 
-        int lootForShipOwner =  (int) loot.lootForShipOwner(piastr);
-        int lootForCaptainAnaOwner = (int) loot.lootForCaptainAndOwner(piastr, pirate);
-        int lootForCaptain = (int) loot.lootForCaptain(piastr,pirate);
-        int lootForUsualPirate = (int) loot.lootForUsualPirate(piastr,pirate);
+        int lootForShipOwner =  (int) loot.countLootForShipOwner(piastr);
+        int lootForCaptainAnaOwner = (int) loot.countLootForCaptainAndOwner(piastr, pirate);
+        int lootForCaptain = (int) loot.countLootForCaptain(piastr,pirate);
+        int lootForUsualPirate = (int) loot.countLootForUsualPirate(piastr,pirate);
 
         System.out.println("Владелец корабля получит " + lootForShipOwner + " пиастр.");
         System.out.println("Капитан корабля получит "+ lootForCaptainAnaOwner+" , если он владелец корабля.");
